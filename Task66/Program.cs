@@ -8,11 +8,11 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите еще одно целое положительное число: ");
 int n = Convert.ToInt32(Console.ReadLine());
 if (m > n)
-    {
-        int temp = m;
-        m = n;
-        n = temp;
-    }
+{
+    int temp = m;
+     m = n;
+     n = temp;
+}
 
 int SumNumbers (int num1, int num2)
 {
@@ -21,4 +21,4 @@ int SumNumbers (int num1, int num2)
     return sum + SumNumbers(num1+1, num2);
 }
 
-Console.WriteLine($"Cумма чисел от {m} до {n}  {SumNumbers(m,n)}");
+Console.WriteLine($"Cумма чисел от {m} до {n} -> {SumNumbers(m,n)}");
