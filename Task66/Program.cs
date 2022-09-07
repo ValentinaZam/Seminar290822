@@ -18,7 +18,7 @@ int SumNumbers (int num1, int num2)
 {
     int sum = num1;
     if (num1 == num2) return sum;
-    return sum + SumNumbers(num1+1, num2);
+    return sum + SumNumbers(num1 + 1, num2);
 }
 
 Console.WriteLine($"Cумма чисел от {m} до {n} -> {SumNumbers(m,n)}");
